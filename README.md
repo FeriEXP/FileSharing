@@ -21,12 +21,8 @@ I Guess This Will Be Usefull For Many People.....😇.
 ##
 ### Installation
 #### Deploy on Heroku
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FeriEXP/File-Sharing-Bot)</br>
-<a href="https://youtu.be/LCrkRTMkmzE">
-  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
-</a><br>
-**Check This Tutorial Video on YouTube for any Help**<br>
-**Thanks to [Erich](https://t.me/ErichDaniken) and his [InFoTel](https://t.me/InFoTel_Group) for this Video**
 
 #### Deploy in your VPS
 ````bash
@@ -36,20 +32,6 @@ pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
 ````
-
-### Admin Commands
-
-```
-/start - start the bot or get posts
-
-/batch - create link for more than one posts
-
-/genlink - create link for one post
-
-/users - view bot statistics
-
-/broadcast - broadcast any messages to bot users
-```
 
 ### Variables
 
@@ -82,12 +64,6 @@ python3 main.py
 * `{filename}` - file name of the Document
 * `{previouscaption}` - Original Caption
 
-
-## Support   
-Join Our [Telegram Group](https://www.telegram.dog/codexbotzsupport) For Support/Assistance And Our [Channel](https://www.telegram.dog/codexbotz) For Updates.   
-   
-Report Bugs, Give Feature Requests There..   
-
 ### Credits
 
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
@@ -101,8 +77,4 @@ will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version. 
-
-##
-
-   **Star this Repo if you Liked it ⭐⭐⭐**
 
