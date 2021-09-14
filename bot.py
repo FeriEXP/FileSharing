@@ -50,9 +50,9 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Aktif Anjing..!\nDibuat oleh Feri\nhttps://t.me/xflicks")
+        self.LOGGER(__name__).info(f"Bot Aktif Anjing..!\n\nDibuat oleh Feri\nhttps://t.me/xflicks")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped.")
+        self.LOGGER(__name__).info("Bot Tewas goblok.")
