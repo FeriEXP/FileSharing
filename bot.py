@@ -1,5 +1,4 @@
 import pyromod.listen
-from pyrogram import Client
 import sys
 from config import (
     API_HASH,
@@ -9,6 +8,7 @@ from config import (
     FORCE_SUB_CHANNEL,
     CHANNEL_ID,
 )
+from pyrogram import Client
 
 class Bot(Client):
     def __init__(self):
