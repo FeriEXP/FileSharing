@@ -1,13 +1,13 @@
 {
-  "name": "TG File Sharing Bot",
+  "name": "File Sharing Bot",
   "description": "file sharing bot store posts and it can access by special links",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
-  "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
+  "repository": "https://github.com/FeriEXP/FileSharing",
+  "logo": "https://telegra.ph/file/2d4981153909cf521d665.jpg",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
@@ -15,7 +15,7 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1250450587"
+      "value": "1669508271"
     },
     "APP_ID":{
       "description": "your app id, take it from my.telegram.org",
