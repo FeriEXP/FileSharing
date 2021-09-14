@@ -16,7 +16,7 @@ from database.sql import add_user, query_msg
 
 
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>Tunggu sebentar ...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
 
@@ -58,11 +58,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please wait...")
+        temp_msg = await message.reply("`Tunggu sebentar...`")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong..!")
+            await message.reply_text("`Ada yang salah..!`")
             return
         await temp_msg.delete()
 
@@ -115,7 +115,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "Join dulu tod",
                 url = client.invitelink)
         ]
     ]
@@ -123,7 +123,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'Coba Lagi',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
