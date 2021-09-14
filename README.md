@@ -1,33 +1,24 @@
 # File-sharing-Bot
 
-Telegram Bot to store Posts and Documents and it can Access by Special Links.
-I Guess This Will Be Usefull For Many People.....😇. 
+Telegram Bot untuk menyimpan Posting dan Dokumen dan dapat Diakses melalui Tautan Khusus.
+Saya Kira Ini Akan Bermanfaat Bagi Banyak Orang.....😇.
 
-##
-
-**If you need any more modes in repo or If you find out any bugs, mention in [@codexbotzsupport ](https://www.telegram.dog/codexbotzsupport)**
 
 ### Features
-- Fully customisable.
-- Customisable welcome & Forcesub messages.
-- More than one Posts in One Link.
-- Can be deployed on heroku directly.
+- Sepenuhnya dapat disesuaikan.
+- Pesan selamat datang & Forcesub yang dapat disesuaikan.
+- Lebih dari satu Posting dalam Satu Tautan
+- Dapat di-deploy di heroku secara langsung.
 
-### Setup
 
-- Add the bot to Database Channel with all permission
-- Add bot to ForceSub channel as Admin with Invite Users via Link Permission if you enabled ForceSub 
-
-##
-### Installation
 #### Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FeriEXP/File-Sharing-Bot)</br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FeriEXP/FileSharing)</br>
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/CodeXBotz/File-Sharing-Bot
-cd File-Sharing-Bot
+git clone https://github.com/FeriEXP/FileSharing
+cd FileSharing
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
