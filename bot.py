@@ -1,10 +1,14 @@
-#(©)Codexbotz
-
 import pyromod.listen
 from pyrogram import Client
 import sys
-
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID
+from config import (
+    API_HASH,
+    APP_ID, LOGGER,
+    TG_BOT_TOKEN,
+    TG_BOT_WORKERS,
+    FORCE_SUB_CHANNEL,
+    CHANNEL_ID,
+)
 
 class Bot(Client):
     def __init__(self):
@@ -41,12 +45,12 @@ class Bot(Client):
             await test.delete()
         except Exception as e:
             self.LOGGER(__name__).warning(e)
-            self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
+            self.LOGGER(__name__).warning(f"Jadikan Gw admin ajg di  DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
+            self.LOGGER(__name__).info("\nBot Tewas. Join https://t.me/AnosSupport for support")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by 𝘾𝙤𝙙𝙚 𝕏 𝘽𝙤𝙩𝙯\nhttps://t.me/CodeXBotz")
+        self.LOGGER(__name__).info(f"Bot Aktif Anjing..!\nDibuat oleh Feri\nhttps://t.me/xflicks")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
