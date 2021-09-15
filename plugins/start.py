@@ -32,7 +32,7 @@ from database.sql import add_user, query_msg
 
 WAIT_MSG = """"<b>Tunggu sebentar ...</b>"""
 
-REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+REPLY_ERROR = """<code>Gunakan perintah ini sebagai replay ke pesan telegram apa pun tanpa spasi.</code>"""
 
 
 #=====================================================================================##
@@ -72,11 +72,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("`Tunggu sebentar...`")
+        temp_msg = await message.reply("Tunggu sebentar...")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("`Ada yang salah..!`")
+            await message.reply_text("Ada yang salah..!")
             return
         await temp_msg.delete()
 
